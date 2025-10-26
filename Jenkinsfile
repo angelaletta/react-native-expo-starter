@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     IMAGE_NAME = 'angelalettaa/simple-app'              // Ganti 'awanmh' dengan username Docker Hub kalian
-    REGISTRY_CREDENTIALS = 'dockerhub-credentials1'
+    REGISTRY_CREDENTIALS = 'dockerhub-credentials2'
   }
 
   stages {
@@ -56,4 +56,5 @@ pipeline {
     }
   }
 }
+
 
