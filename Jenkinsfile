@@ -11,7 +11,7 @@ pipeline {
     stage('Checkout') {
       steps {
         echo 'Checkout source code...'
-        git branch: 'main', url: 'https://github.com/angelaletta/react-native-expo-starter.git'
+        git branch: main, url: 'https://github.com/angelaletta/react-native-expo-starter.git'
       }
     }
 
@@ -56,4 +56,5 @@ pipeline {
     }
   }
 }
+
 
