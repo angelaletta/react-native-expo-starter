@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    IMAGE_NAME = 'angelalettaa/simple-app'              // Ganti 'awanmh' dengan username Docker Hub kalian
+    IMAGE_NAME = 'angelalettaa/simple-app'
     REGISTRY_CREDENTIALS = 'dockerhub-credentials2'
   }
 
@@ -11,7 +11,7 @@ pipeline {
     stage('Checkout') {
       steps {
         echo 'Checkout source code...'
-        checkout scm
+        git branch: 'master', url: 'https://github.com/alexdevero/react-native-expo-starter.git'
       }
     }
 
@@ -56,5 +56,3 @@ pipeline {
     }
   }
 }
-
-
